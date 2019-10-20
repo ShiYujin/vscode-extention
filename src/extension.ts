@@ -20,7 +20,7 @@ function get_uri(branch:string){
 	const uri = config.get<vscode.Uri>('url')
 	let uri_string = ""
 	if(uri != undefined){
-		uri_string = "https://" + uri.toString()
+		uri_string = uri.toString()
 		let texteditor = vscode.window.activeTextEditor
 		if(texteditor != undefined){
 			// get active doc path

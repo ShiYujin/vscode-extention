@@ -78,6 +78,10 @@ Fix publish issue
 
 Support git branch
 
+### 0.1.4
+
+Fix uri issue and update doc
+
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information
