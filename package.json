@@ -4,7 +4,7 @@
 	"publisher": "shiyujin",
 	"displayName": "gogit",
 	"description": "shortcut to go git repo",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -51,10 +51,10 @@
 			}
 		]
 	},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ShiYujin/vscode-gogit.git"
-  },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ShiYujin/vscode-gogit.git"
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
