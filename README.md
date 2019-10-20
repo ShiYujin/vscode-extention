@@ -78,7 +78,7 @@ Fix publish issue
 
 Support git branch
 
-### 0.1.4
+### 0.1.5
 
 Fix uri issue and update doc
 
