@@ -2,32 +2,65 @@
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Go to git repo and open current viewed file.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Workspace folder must be a git repo.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Add `"gogit.url": "https://git-repo_url"` in project setting under `.vscode` file.
 
-For example:
+## Usage
 
-This extension contributes the following settings:
+Open Command Palette with shortcut `⇧⌘P`,
+  and type `gogit`, there will be 4 different command:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+- Go Git(master)
+- Go Git(branch)
+- Go Git(copy master link)
+- Go Git(copy branch link)
 
-## Known Issues
+you can open/copy link of git repo and locate current active doc(lines) in master/branch.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Development
+
+Generate `.vsix` package:
+
+```bash
+vsce package
+```
+
+Publish with version:
+
+```bash
+vsce publish 0.0.0
+```
+
+## Test
+
+1. markdown lint test
+
+Tests are required before publish.
+
+### markdown lint test
+
+```bash
+markdownlint --config .markdownlintrc ./README.md
+```
+
+Fix lint errors if any.
+
+You may need to install it before first using:
+
+```bash
+sudo npm install -g markdownlint-cli
+```
+
+## TODO list
+
+- Add test case and test doc.
 
 ## Release Notes
 
@@ -47,17 +80,9 @@ Support git branch
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
 ### For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
