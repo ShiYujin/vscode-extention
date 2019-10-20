@@ -1,17 +1,14 @@
 import * as vscode from 'vscode';
 
 function getbranch() : string{
-	var exec = require('child_process').exec;
-
+	var execSync = require('child_process').execSync;
 	let branch = "master"
 	let workspacepath = ""
 	if(vscode.workspace.workspaceFolders != undefined){
 		workspacepath = vscode.workspace.workspaceFolders[0].uri.fsPath.toString()
-
-		exec("cd " + workspacepath + "&& git branch --show-current", function(err:Error, stdout:string, stderr:string) {
-			branch = stdout
-		});
+		branch = execSync("cd " + workspacepath + "&& git branch --show-current").toString()
 	}
+	vscode.window.showInformationMessage(branch);	
 	return branch;
 }
 
@@ -64,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 		let uri = get_uri("master")
 		if(uri != ""){
 			vscode.env.openExternal(vscode.Uri.parse(uri));
-			vscode.window.showInformationMessage(uri);	
+			// vscode.window.showInformationMessage(uri);	
 		}
 		else
 			vscode.window.showInformationMessage('Please edit your repo url in setting!');
@@ -72,9 +69,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(vscode.commands.registerCommand('extension.gogit_branch', () =>{
 		let uri = get_uri(getbranch())
+		// vscode.window.showInformationMessage(getbranch());	
 		if(uri != ""){
 			vscode.env.openExternal(vscode.Uri.parse(uri));
-			vscode.window.showInformationMessage(uri);	
+			// vscode.window.showInformationMessage(uri);	
 		}
 		else
 			vscode.window.showInformationMessage('Please edit your repo url in setting!');

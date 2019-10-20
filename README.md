@@ -82,6 +82,10 @@ Support git branch
 
 Fix uri issue and update doc
 
+### 0.1.6
+
+Fix go branch issue
+
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information
