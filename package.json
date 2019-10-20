@@ -3,7 +3,7 @@
 	"publisher": "shiyujin",
 	"displayName": "gogit",
 	"description": "shortcut to go git repo",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -19,7 +19,9 @@
 			"title": "GoGit",
 			"properties": {
 				"gogit.url": {
-					"type": ["string"],
+					"type": [
+						"string"
+					],
 					"default": "github.com",
 					"format": "uri",
 					"description": "Define your git repo url"
