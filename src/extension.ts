@@ -6,9 +6,9 @@ function getbranch() : string{
 	let workspacepath = ""
 	if(vscode.workspace.workspaceFolders != undefined){
 		workspacepath = vscode.workspace.workspaceFolders[0].uri.fsPath.toString()
-		branch = execSync("cd " + workspacepath + "&& git branch --show-current").toString()
+		branch = execSync("cd " + workspacepath + "&& git branch --show-current").toString().trim()
 	}
-	vscode.window.showInformationMessage(branch);	
+	// vscode.window.showInformationMessage(branch);	
 	return branch;
 }
 

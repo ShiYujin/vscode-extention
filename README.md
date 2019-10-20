@@ -86,6 +86,10 @@ Fix uri issue and update doc
 
 Fix go branch issue
 
+### 0.1.7
+
+Fix go branch issue, version 2
+
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information
