@@ -1,5 +1,6 @@
 {
 	"name": "gogit",
+	"icon": "assets/go.png",
 	"publisher": "shiyujin",
 	"displayName": "gogit",
 	"description": "shortcut to go git repo",
@@ -11,7 +12,10 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.gogit"
+		"onCommand:extension.gogit_master",
+		"onCommand:extension.gogit_master_link",
+		"onCommand:extension.gogit_branch",
+		"onCommand:extension.gogit_branch_link"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -30,11 +34,27 @@
 		},
 		"commands": [
 			{
-				"command": "extension.gogit",
-				"title": "Go Git"
+				"command": "extension.gogit_master",
+				"title": "Go Git(master)"
+			},
+			{
+				"command": "extension.gogit_master_link",
+				"title": "Go Git(copy master link)"
+			},
+			{
+				"command": "extension.gogit_branch",
+				"title": "Go Git(branch)"
+			},
+			{
+				"command": "extension.gogit_branch_link",
+				"title": "Go Git(copy branch link)"
 			}
 		]
 	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShiYujin/vscode-gogit.git"
+  },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",

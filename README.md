@@ -37,9 +37,13 @@ Users appreciate release notes as you update your extension.
 
 First release.
 
-## 0.1.2
+### 0.1.2
 
 Fix publish issue
+
+### 0.1.4
+
+Support git branch
 
 -----------------------------------------------------------------------------------------------------------
 
