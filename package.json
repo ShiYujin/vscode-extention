@@ -19,19 +19,6 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"configuration": {
-			"title": "GoGit",
-			"properties": {
-				"gogit.url": {
-					"type": [
-						"string"
-					],
-					"default": "https://github.com",
-					"format": "uri",
-					"description": "Define your git repo url"
-				}
-			}
-		},
 		"commands": [
 			{
 				"command": "extension.gogit_master",

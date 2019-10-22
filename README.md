@@ -90,6 +90,10 @@ Fix go branch issue
 
 Fix go branch issue, version 2
 
+### 0.1.8
+
+Remove git url setting and fetch using git command automatically.
+
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information
