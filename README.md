@@ -8,10 +8,6 @@ Go to git repo and open current viewed file.
 
 Workspace folder must be a git repo.
 
-## Extension Settings
-
-Add `"gogit.url": "https://git-repo_url"` in project setting under `.vscode` file.
-
 ## Usage
 
 Open Command Palette with shortcut `⇧⌘P`,
