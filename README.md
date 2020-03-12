@@ -13,6 +13,8 @@ Workspace folder must be a git repo.
 Open Command Palette with shortcut `⇧⌘P`,
   and type `gogit`, there will be 4 different command:
 
+- Go CS
+- Go CS(copy link)
 - Go Git(master)
 - Go Git(branch)
 - Go Git(copy master link)
