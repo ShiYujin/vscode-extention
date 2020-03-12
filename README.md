@@ -90,7 +90,7 @@ Fix go branch issue, version 2
 
 Remove git url setting and fetch using git command automatically.
 
-### 0.1.8
+### 0.1.9
 
 Add sourcecode link.
 
