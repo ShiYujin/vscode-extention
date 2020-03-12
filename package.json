@@ -3,8 +3,8 @@
 	"icon": "assets/go.png",
 	"publisher": "shiyujin",
 	"displayName": "gogit",
-	"description": "shortcut to go git repo",
-	"version": "0.1.8",
+	"description": "shortcut to go to git repo",
+	"version": "0.1.9",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -12,6 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onCommand:extension.gocs",
+		"onCommand:extension.gocs_link",
 		"onCommand:extension.gogit_master",
 		"onCommand:extension.gogit_master_link",
 		"onCommand:extension.gogit_branch",
@@ -20,6 +22,14 @@
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
+			{
+				"command": "extension.gocs",
+				"title": "Go CS"
+			},
+			{
+				"command": "extension.gocs_link",
+				"title": "Go CS(copy link)"
+			},
 			{
 				"command": "extension.gogit_master",
 				"title": "Go Git(master)"
