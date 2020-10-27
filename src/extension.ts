@@ -56,8 +56,12 @@ function geturi(cd : string) : string{
 	const execSync = require('child_process').execSync
 	const remote = getremote(cd);
 	execSync(cd)
-	// var full_uri = execSync("git config --get remote." + remote + ".url")
 	var full_uri = execSync(cd + " && git config --get remote." + remote + ".url").toString().trim()
+	// deal with ssh address
+	if(full_uri.substr(0,4) == "git@"){
+		full_uri = full_uri.replace(":", "/");
+		full_uri = full_uri.replace("git@", "https://");
+	}
 	return full_uri
 }
 
