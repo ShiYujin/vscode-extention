@@ -4,7 +4,7 @@
 	"publisher": "shiyujin",
 	"displayName": "gogit",
 	"description": "shortcut to go to git repo",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
