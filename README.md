@@ -96,6 +96,10 @@ Remove git url setting and fetch using git command automatically.
 
 Add sourcecode link.
 
+### 0.1.10
+
+Support Windows.
+
 -----------------------------------------------------------------------------------------------------------
 
 ### For more information

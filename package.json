@@ -23,14 +23,6 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.gocs",
-				"title": "Go CS"
-			},
-			{
-				"command": "extension.gocs_link",
-				"title": "Go CS(copy link)"
-			},
-			{
 				"command": "extension.gogit_master",
 				"title": "Go Git(master)"
 			},
